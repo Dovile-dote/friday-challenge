@@ -5,6 +5,7 @@ nav {
     text-align: center;
     float: left;
     transition: all, 1s;
+    box-shadow: 2px 0px 8px var(--grey);
 }
 
 nav:hover {
