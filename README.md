@@ -10,7 +10,7 @@ _Friday challenge project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: 
+Site published at: https://dovile-dote.github.io/friday-challenge/
 
 Design: [Figma design](https://www.figma.com/file/uaVXnAQh9QxVsUD1RcQEbt/Friday-Challenge?node-id=607%3A721)
 
