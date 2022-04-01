@@ -19,6 +19,7 @@ Design: [Figma design](https://www.figma.com/file/uaVXnAQh9QxVsUD1RcQEbt/Friday-
 -   html
 -   css
 -   svg
+-   favicon
 
 ## Authors
 
