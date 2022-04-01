@@ -4,6 +4,7 @@ nav {
     height: 100vh;
     text-align: center;
     float: left;
+    transition: all, 1s;
 }
 
 nav:hover {
@@ -15,6 +16,7 @@ nav .logo {
     margin-top: 52px;
     border-bottom: 2px solid var(--grey);
     padding-bottom: 24px;
+    transition: 2s;
 }
 
 
@@ -42,7 +44,7 @@ nav a:hover {
 }
 
 nav a:hover div {
-    color:#02577a;
+    color:var(--blue);
 }
 
 nav a:hover img {
@@ -61,7 +63,6 @@ nav a div {
 
 nav:hover a div {
     display: inline-block;
-    vertical-align: baseline;
 }
 
 .active {
@@ -83,4 +84,6 @@ footer div {
     transform: translateX(-50%);
     padding: 11px 81px;
     border-top: 1px solid var(--blue);
+    font-size: 11px;
+    line-height: 13px;
 }
