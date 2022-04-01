@@ -1,0 +1,22 @@
+:root {
+    --main-background : #EBEEF5;
+    --light-grey : #f7f6ff;
+    --grey : #c4c4c4;
+    --blue: #02577a;
+    --white: #fff;
+}
+
+
+body,
+body* {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--main-background);
+    display: inline-block;
+}
