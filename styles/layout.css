@@ -32,6 +32,7 @@ nav a {
     text-decoration: none;
     display: block;
     transition: 1s;
+    max-height: 57px;
 }
 
 nav:hover a {
@@ -52,6 +53,7 @@ nav a:hover div {
 }
 
 nav a img {
+    /* display: inline-block; */
     transition: 1s;
 }
 
@@ -61,25 +63,32 @@ nav a:hover img {
 
 nav:hover .active {
     margin-left: 11px;
+    padding-left: 32px;
 }
 
 nav a div {
-    font-size: 0;
+    display: inline-block;
+    font-size: 0px;
     color: var(--grey);
-    margin-left: 19px;
     transition: 1s;
 }
 
 nav:hover a div {
-    display: inline-block;
+    /* display: inline-block;     */
+    margin-left: 19px;
     font-size: 16px;
 }
 
 .active {
     background-color: var(--white);
-    padding: 16px 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /* padding-left: 32px; */
+    /* padding: 16px 32px; */
+    width: calc(100% - 11px);
     margin-left: 11px;
     border-radius: 25px 0px 0px 25px;
+    /* display: inline-block; */
 }
 
 .active div {
