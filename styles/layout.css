@@ -1,23 +1,23 @@
 nav {
+    position: fixed;
     background-color:  var(--light-grey);
     width: 100px;
     height: 100vh;
     text-align: center;
     float: left;
-    transition: all, 1s;
+    transition: all, 0.5s;
     box-shadow: 2px 0px 1px var(--grey);
 }
 
 nav:hover {
     width: 206px;
-    /* text-align: left; */
 }
 
 nav .logo {
     margin-top: 52px;
     border-bottom: 2px solid var(--grey);
     padding-bottom: 24px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 
@@ -30,7 +30,7 @@ nav a {
     margin-top: 34px;
     text-decoration: none;
     display: block;
-    transition: 1s;
+    transition: 0.5s;
     max-height: 57px;
 }
 
@@ -52,7 +52,7 @@ nav a:hover div {
 }
 
 nav a img {
-    transition: 1s;
+    transition: 0.5s;
 }
 
 nav a:hover img {
@@ -88,31 +88,23 @@ nav:hover a div {
     color: var(--blue);
 }
 
-footer div {
-    color: var(--blue);
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 11px 81px;
-    border-top: 1px solid var(--blue);
-    font-size: 11px;
-    line-height: 13px;
-}
-
-/* section {
-    width: calc(100% - 100px);
+section {
+    width: calc(100vw - 100px);
+    margin-left: 100px;
+    text-align: center;
     display: inline-block;
-} */
+} 
 
-/* h1 {
+h1 {
     padding-top: 59px;
     padding-left: 100px;
     float: left;
     font-size: 36px;
-} */
+    text-align: left;
+    font-weight: 500;
+}
 
-/* .date {
+.date {
     background-color: var(--white);
     float: right;
     border-radius: 25px;
@@ -121,15 +113,83 @@ footer div {
     margin-bottom: 23px;
     padding: 22px 96px;
     font-size: 24px;
-} */
+    text-align: left;
+}
 
-/* .date h2 {
+.date h2 {
     font-size: 36px;
+    font-weight: 500;
     color: var(--blue);
     margin: 0;
-} */
+}
 
-/* .citata {
+.img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.img > img {
+    object-fit: cover;
+}
+
+.citata {
     border: 2px solid var(--blue);
     border-radius: 25px;
-} */
+    margin-top: 49px;
+    padding: 49px 185px;
+    display: inline-block;
+
+}
+
+footer  {
+    
+    margin-top: 43px;
+    width: 100%;
+    text-align: center;
+    padding: 11px 81px;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+footer > div {
+    border-top: 1px solid var(--blue);
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+@media (max-width: 1060px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    
+    .date {
+        margin: 30px;
+        padding: 22px 20px;
+    }
+
+    h1 {
+        font-size: 29px;
+        padding: 0;
+        padding-left: 40px;
+    }
+
+    .img {
+        margin-top: 13px;
+    }
+
+    .citata {
+        margin: 26px 18px 33px 25px;
+        padding: 40px 64px;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer > div {
+        margin-left: 100px;
+    }
+}
