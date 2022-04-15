@@ -177,6 +177,7 @@ footer > div {
 
     .img {
         margin-top: 13px;
+        max-height: 283px;
     }
 
     .citata {
