@@ -1,0 +1,109 @@
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 100vh;
+}
+
+.container {
+  /* height: 150px; */
+  max-width: 50%;
+  background-color: var(--white);
+  border-radius: 25px;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding-left: 42px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+.container h3 {
+  margin-top: 25px;
+  font-size: 26px;
+  font-weight: 700px;
+}
+
+.container p {
+  color: var(--grey);
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.spalvoti {
+  width: 188px;
+  height: 20px;
+  border-radius: 25px;
+  margin-top: 30px;
+}
+
+.calendar {
+  max-width: 500px;
+  padding-right: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar img {
+  width: 30px;
+  height: 12px;
+  margin-left: 26px;
+  margin-right: 26px;
+}
+.calendar img:not(:first-child) {
+  transform: rotate(180deg);
+}
+
+.calendar span {
+  color: var(--grey);
+}
+
+.dienos {
+  padding-top: 51px;
+  padding-bottom: 29px;
+  border-bottom: 1px solid var(--grey);
+}
+
+.dienos span {
+  margin-left: 18px;
+}
+
+.skaiciai {
+  margin-top: 26px;
+  margin-left: 22px;
+  max-width: 400px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.skaiciai span {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.skaiciai > .black {
+  color: black;
+}
+
+.skaiciai > .curent {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 50%;
+  transform: scale(1.5);
+  font-size: 1px;
+  padding-top: 4px;
+  /* width: 52px; */
+  /* height: 52px; */
+  /* padding: 14px; */
+  text-align: center;
+}
