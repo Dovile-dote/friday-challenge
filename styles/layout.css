@@ -125,13 +125,12 @@ h1 {
 }
 
 .img {
+  height: 432px;
+  background-image: url(../assets/workplace.jpg);
+  background-position: center;
+  background-size:cover;
   width: 100%;
   overflow: hidden;
-}
-
-.img > img {
-  object-fit: cover;
-  /* opacity: 0.8; */
 }
 
 .citata {
