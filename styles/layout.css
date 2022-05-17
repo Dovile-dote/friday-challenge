@@ -89,11 +89,6 @@ nav:hover a div {
   color: var(--blue);
 }
 
-/* {
-  filter: brightness(0) saturate(100%) invert(24%) sepia(95%) saturate(673%)
-    hue-rotate(159deg) brightness(93%) contrast(103%);
-} */
-
 section {
   width: calc(100vw - 100px);
   margin-left: 100px;
@@ -151,7 +146,7 @@ footer {
   margin-top: 43px;
   width: 100%;
   text-align: center;
-  padding: 11px 81px;
+  padding: 11px 0;
   font-size: 11px;
   line-height: 13px;
 }

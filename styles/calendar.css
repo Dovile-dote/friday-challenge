@@ -1,13 +1,15 @@
 section {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 100vh;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* height: 650px; */
 }
-
+.elements {
+  width: 43%;
+}
 .container {
   /* height: 150px; */
-  max-width: 50%;
+  /* width: 43%; */
   background-color: var(--white);
   border-radius: 25px;
   margin-top: 50px;
@@ -17,8 +19,14 @@ section {
   text-align: left;
 }
 
+.container i {
+  float: right;
+  margin-top: 44px;
+  margin-right: 56px;
+}
+
 .container h3 {
-  margin-top: 25px;
+  padding-top: 25px;
   font-size: 26px;
   font-weight: 700px;
 }
@@ -37,7 +45,8 @@ section {
 }
 
 .calendar {
-  max-width: 500px;
+  width: 45%;
+  /* margin-left: 0; */
   padding-right: 42px;
   display: flex;
   flex-direction: column;
@@ -48,6 +57,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 32px;
+  padding-top: 0;
 }
 
 .calendar img {
@@ -61,6 +72,7 @@ section {
 }
 
 .calendar span {
+  font-size: 24px;
   color: var(--grey);
 }
 
@@ -77,16 +89,16 @@ section {
 .skaiciai {
   margin-top: 26px;
   margin-left: 22px;
-  max-width: 400px;
+  max-width: 450px;
   display: flex;
-  gap: 24px;
+  gap: 35px;
   flex-wrap: wrap;
 }
 
 .skaiciai span {
   text-align: center;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   font-weight: bold;
   font-size: 24px;
 }
@@ -100,10 +112,64 @@ section {
   color: white;
   border-radius: 50%;
   transform: scale(1.5);
-  font-size: 1px;
-  padding-top: 4px;
-  /* width: 52px; */
-  /* height: 52px; */
-  /* padding: 14px; */
+  font-size: 15px;
+  padding-top: 6px;
   text-align: center;
+}
+
+.pliusas {
+  font-size: 48px;
+  color: var(--white);
+  background-color: var(--blue);
+  margin-top: 49px;
+  margin-left: 150px;
+  padding-top: 5px;
+  padding-left: 21px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1060px) {
+  .elements {
+    margin: 0 14px 33px 13px;
+    width: calc(100% - 27px);
+  }
+  .container {
+    margin-top: 33px;
+    margin-left: 0;
+    /* padding-left: 42px; */
+    padding-bottom: 25px;
+    text-align: left;
+  }
+  section {
+    flex-direction: column-reverse;
+
+    height: auto;
+  }
+  .calendar {
+    margin: 46px 14px 0 13px;
+    width: calc(100% - 27px);
+  }
+  .dienos {
+    padding-top: 31px;
+  }
+  .dienos span {
+    margin-left: 8px;
+    font-size: 20px;
+  }
+  .skaiciai {
+    gap: 17px;
+  }
+  .pliusas {
+    /* justify-self: flex-start; */
+    float: right;
+    margin-top: 7px;
+    margin-right: 14px;
+    margin-bottom: 52px;
+    width: 60px;
+    height: 60px;
+    padding-top: 1px;
+    padding-left: 16px;
+  }
 }
