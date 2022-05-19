@@ -128,6 +128,12 @@ section {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.pliusas:hover {
+  color: var(--blue);
+  background-color: var(--white);
 }
 
 @media (max-width: 1060px) {
@@ -135,32 +141,37 @@ section {
     margin: 0 14px 33px 13px;
     width: calc(100% - 27px);
   }
+
   .container {
     margin-top: 33px;
     margin-left: 0;
-    /* padding-left: 42px; */
     padding-bottom: 25px;
     text-align: left;
   }
+
   section {
     flex-direction: column-reverse;
-
     height: auto;
   }
+
   .calendar {
     margin: 46px 14px 0 13px;
     width: calc(100% - 27px);
   }
+
   .dienos {
     padding-top: 31px;
   }
+
   .dienos span {
     margin-left: 8px;
     font-size: 20px;
   }
+
   .skaiciai {
     gap: 17px;
   }
+
   .pliusas {
     /* justify-self: flex-start; */
     float: right;
@@ -172,6 +183,7 @@ section {
     padding-top: 1px;
     padding-left: 16px;
   }
+
   footer {
     margin-top: 119px;
   }
